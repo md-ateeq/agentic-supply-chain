@@ -1,0 +1,14 @@
+<messaging:emailTemplate subject="[CRITICAL]: Issue with your shipment {! relatedTo.Order_Id__c}" recipientType="Contact" relatedToType="Case">
+<messaging:htmlEmailBody >
+Dear {!relatedTo.Contact.Name},
+<br/><br/>
+{! relatedTo.Description }
+<br/><br/>
+To get support or more information on the case, please click <a href="https://orgfarm-f4e2df0f22.my.site.com/farmhouse/s?orderId={!relatedTo.Order_Id__c}&caseNumber={!relatedTo.CaseNumber}">here</a>.
+<br/>
+<br/>
+Thanks,
+<br/>
+Geeky Blinders Team
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

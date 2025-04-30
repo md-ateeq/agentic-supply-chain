@@ -1,0 +1,28 @@
+{
+  "required" : [ "caseNumber", "messagingSessionId", "orderNumber" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "caseNumber" : {
+      "title" : "caseNumber",
+      "description" : "The case number text provided by the user.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "messagingSessionId" : {
+      "title" : "messagingSessionId",
+      "description" : "Pass the Id of the messaging session from the Messaging Session context variable.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "orderNumber" : {
+      "title" : "orderNumber",
+      "description" : "The order number text provided by the user.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

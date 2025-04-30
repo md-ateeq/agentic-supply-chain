@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlanner xmlns="http://soap.sforce.com/2006/04/metadata">
+    <attributeMappings>
+        <attributeName>SvcCopilotTmpl__CaseManagement.Get_Case_By_Case_Number_and_Order_Number_TDX_2.input_messagingSessionId</attributeName>
+        <attributeType>CustomPluginFunctionAttribute</attributeType>
+        <mappingTargetName>RoutableId</mappingTargetName>
+        <mappingType>ContextVariable</mappingType>
+    </attributeMappings>
+    <description>Deliver personalized customer interactions with an autonomous AI agent. Agentforce Service Agent intelligently supports your customers with common inquiries and escalates complex issues.</description>
+    <genAiFunctions>
+        <genAiFunctionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</genAiFunctionName>
+    </genAiFunctions>
+    <genAiPlugins>
+        <genAiCustomizedPlugin>
+            <description>Handles customer inquiries and actions related to support cases, including providing case information, updating existing cases, and creating new cases.</description>
+            <genAiFunctions>
+                <functionName>Get_Case_By_Case_Number_and_Order_Number_TDX_2</functionName>
+            </genAiFunctions>
+            <genAiPluginInstructions>
+                <description>Always format any dates in a human readable format</description>
+                <developerName>instruction_alwaysform0</developerName>
+                <language>en_US</language>
+                <masterLabel>instruction_alwaysform0</masterLabel>
+            </genAiPluginInstructions>
+            <genAiPluginInstructions>
+                <description>Do not ever show the Case Id to a customer</description>
+                <developerName>instruction_donotevers1</developerName>
+                <language>en_US</language>
+                <masterLabel>instruction_donotevers1</masterLabel>
+            </genAiPluginInstructions>
+            <genAiPluginInstructions>
+                <description>When sharing case details to the customer, show the following properties as an itemized list :Case number, Subject, Description, Order Amount and Status.</description>
+                <developerName>instruction_whensharin2</developerName>
+                <language>en_US</language>
+                <masterLabel>instruction_whensharin2</masterLabel>
+            </genAiPluginInstructions>
+            <genAiPluginInstructions>
+                <description>A case is a record used to help track a customer&apos;s issues. Customers may have questions about the status of the issue or want to provide more information for the case. Cases are usually associated with a contact. Comments are added to provide new information.</description>
+                <developerName>instruction_acaseisare3</developerName>
+                <language>en_US</language>
+                <masterLabel>instruction_acaseisare3</masterLabel>
+            </genAiPluginInstructions>
+            <genAiPluginInstructions>
+                <description>Use the Answer Questions with Knowledge action to answer troubleshooting questions.</description>
+                <developerName>instruction_usetheansw4</developerName>
+                <language>en_US</language>
+                <masterLabel>instruction_usetheansw4</masterLabel>
+            </genAiPluginInstructions>
+            <genAiPluginInstructions>
+                <description>Acknowledge and validate user concerns with empathy and professionalism.</description>
+                <developerName>instruction_acknowledg5</developerName>
+                <language>en_US</language>
+                <masterLabel>instruction_acknowledg5</masterLabel>
+            </genAiPluginInstructions>
+            <genAiPluginInstructions>
+                <description>When a customer asks you to create a case, please summarize the current conversation. The subject should be less than 7 words and function as a high level overview of what the customer inquired about. The description should be no more than 3 sentences and should provide more depth about what exactly the customer asked, important data, and any other relevant information to help a customer service representative understand the context of this conversation.</description>
+                <developerName>instruction_whenacusto6</developerName>
+                <language>en_US</language>
+                <masterLabel>instruction_whenacusto6</masterLabel>
+            </genAiPluginInstructions>
+            <genAiPluginInstructions>
+                <description>Once the case details are displayed to the user, provide them one of the following options to choose from,
+1. Get a refund.
+2. Cancel the order.
+3. Talk to a representative.
+
+If the user opts to talk to a representative, then route the messaging session to human agent.
+
+If the user opts to get a refund, then refund the amount of the Order Amount is less than USD 2000. If the Order Amount is greater than that, then notify user about involvement of a human agent.
+
+If the user opts to cancel the order, then send a confirmation message to the user that the order has been canceled.</description>
+                <developerName>instruction_oncethecas7</developerName>
+                <language>en_US</language>
+                <masterLabel>instruction_oncethecas7</masterLabel>
+            </genAiPluginInstructions>
+            <language>en_US</language>
+            <masterLabel>Case Management</masterLabel>
+            <name>CaseManagement</name>
+            <pluginType>Topic</pluginType>
+            <scope>Your job is to help customers retrieve case information, update case comments, and create new cases based on customer requests.</scope>
+        </genAiCustomizedPlugin>
+        <genAiPluginName>SvcCopilotTmpl__CaseManagement</genAiPluginName>
+    </genAiPlugins>
+    <genAiPlugins>
+        <genAiPluginName>SvcCopilotTmpl__Escalation</genAiPluginName>
+    </genAiPlugins>
+    <masterLabel>Agentforce Service Agent</masterLabel>
+    <plannerType>AiCopilot__ReAct</plannerType>
+</GenAiPlanner>

@@ -1,0 +1,21 @@
+{
+  "required" : [ "caseNumber", "orderNumber" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "caseNumber" : {
+      "title" : "caseNumber",
+      "description" : "The case number text provided by the user.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "orderNumber" : {
+      "title" : "orderNumber",
+      "description" : "The order number text provided by the user.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

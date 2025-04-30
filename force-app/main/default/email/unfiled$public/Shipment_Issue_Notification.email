@@ -1,0 +1,10 @@
+Dear {!Contact.Name},
+<br/><br/>
+{!Case.Description}
+<br/><br/>
+To get support or more information on the case, please click <a href="https://orgfarm-f4e2df0f22.my.site.com/farmhouse/s?orderId={!Case.Order_Id__c}&caseNumber={!Case.CaseNumber}">here</a>.
+<br/>
+<br/>
+Thanks,
+<br/>
+Geeky Blinders Team

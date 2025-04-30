@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <available>true</available>
+    <description>Issue with your shipment</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Shipment Issue</name>
+    <style>none</style>
+    <subject>[CRITICAL]: Issue with your shipment</subject>
+    <type>visualforce</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

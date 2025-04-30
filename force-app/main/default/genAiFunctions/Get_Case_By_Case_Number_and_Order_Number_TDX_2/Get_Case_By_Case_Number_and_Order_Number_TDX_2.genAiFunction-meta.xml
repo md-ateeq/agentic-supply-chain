@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This action fetches the case record based on the case number and order number provided by the user.</description>
+    <invocationTarget>Get_Case_By_Case_Number_and_Order_Number_TDX</invocationTarget>
+    <invocationTargetType>flow</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>false</isIncludeInProgressIndicator>
+    <mappingAttributes>
+        <label>messagingSessionId</label>
+        <name>input_messagingSessionId</name>
+        <parameterName>messagingSessionId</parameterName>
+        <parameterType>input</parameterType>
+    </mappingAttributes>
+    <masterLabel>Get Case By Case Number and Order Number TDX 2</masterLabel>
+</GenAiFunction>
